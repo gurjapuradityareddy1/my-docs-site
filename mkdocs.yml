@@ -1,9 +1,19 @@
-site_name: My Docs Site
-
-nav:
-  - Home: index.md
-  - About: about.md
-  - Contact: contact.md
+site_name: SimpleChat API Documentation
 
 theme:
   name: material
+  palette:
+    - scheme: slate       # Dark mode only
+      primary: 'indigo'
+      accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Fira Code'
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API Reference: api-reference.md
+  - Examples: examples.md
+  - FAQ: faq.md
+  - Changelog: changelog.md
