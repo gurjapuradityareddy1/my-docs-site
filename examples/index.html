@@ -9,6 +9,10 @@
       
       
       
+        <link rel="prev" href="../api-reference/">
+      
+      
+        <link rel="next" href="../faq/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -16,7 +20,7 @@
     
     
       
-        <title>About This Site - SimpleChat API Documentation</title>
+        <title>Examples - SimpleChat API Documentation</title>
       
     
     
@@ -68,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-this-site" class="md-skip">
+        <a href="#examples-tutorials" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About This Site
+              Examples
             
           </span>
         </div>
@@ -275,10 +279,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../examples/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -289,6 +315,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-your-first-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Create Your First Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-list-all-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ List All Messages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-update-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Update a Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-delete-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Delete a Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-real-world-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ Real-World Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -357,6 +457,68 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-create-your-first-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      1️⃣ Create Your First Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-list-all-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      2️⃣ List All Messages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-update-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      3️⃣ Update a Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-delete-a-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      4️⃣ Delete a Message
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-real-world-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      5️⃣ Real-World Workflow
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Summary
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -371,8 +533,98 @@
 
 
 
-<h1 id="about-this-site">About This Site</h1>
-<p>This is the About page.</p>
+<h1 id="examples-tutorials">Examples &amp; Tutorials</h1>
+<p>This page provides step-by-step examples of how to use the <strong>SimpleChat API</strong> for common tasks.</p>
+<hr />
+<h2 id="1-create-your-first-message">1️⃣ Create Your First Message</h2>
+<p><strong>Goal:</strong> Send a message from one user to another.</p>
+<p>!!! note "Before You Start"
+    Make sure you have your <strong>API key</strong> and have set up your account in the API Dashboard.</p>
+<p><strong>Step 1: Prepare the Request</strong></p>
+<pre><code class="language-python">import requests
+
+api_key = &quot;YOUR_API_KEY&quot;
+url = &quot;https://api.simplechat.example.com/messages&quot;
+
+payload = {
+    &quot;to&quot;: &quot;bob&quot;,
+    &quot;message&quot;: &quot;Hello Bob! This is my first message.&quot;
+}
+
+headers = {
+    &quot;Authorization&quot;: f&quot;Bearer {api_key}&quot;,
+    &quot;Content-Type&quot;: &quot;application/json&quot;
+}
+</code></pre>
+<p><strong>Step 2: Send the Request</strong></p>
+<pre><code class="language-python">response = requests.post(url, headers=headers, json=payload)
+print(response.json())
+</code></pre>
+<p><strong>Sample Response:</strong></p>
+<pre><code class="language-json">{
+    &quot;id&quot;: 1,
+    &quot;from&quot;: &quot;alice&quot;,
+    &quot;to&quot;: &quot;bob&quot;,
+    &quot;message&quot;: &quot;Hello Bob! This is my first message.&quot;,
+    &quot;timestamp&quot;: &quot;2025-08-19T10:00:00Z&quot;
+}
+</code></pre>
+<hr />
+<h2 id="2-list-all-messages">2️⃣ List All Messages</h2>
+<p><strong>Goal:</strong> Fetch all messages in your account.</p>
+<pre><code class="language-python">response = requests.get(&quot;https://api.simplechat.example.com/messages&quot;, headers=headers)
+messages = response.json()
+for msg in messages:
+    print(f&quot;{msg['from']} → {msg['to']}: {msg['message']}&quot;)
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<pre><code>alice → bob: Hello Bob! This is my first message.
+bob → alice: Hey Alice! Got your message.
+</code></pre>
+<hr />
+<h2 id="3-update-a-message">3️⃣ Update a Message</h2>
+<p><strong>Goal:</strong> Modify the content of an existing message.</p>
+<pre><code class="language-python">message_id = 1
+payload = {&quot;message&quot;: &quot;Hello Bob! Edited message content.&quot;}
+
+response = requests.put(f&quot;https://api.simplechat.example.com/messages/{message_id}&quot;, headers=headers, json=payload)
+print(response.json())
+</code></pre>
+<p><strong>Sample Response:</strong></p>
+<pre><code class="language-json">{
+    &quot;id&quot;: 1,
+    &quot;from&quot;: &quot;alice&quot;,
+    &quot;to&quot;: &quot;bob&quot;,
+    &quot;message&quot;: &quot;Hello Bob! Edited message content.&quot;,
+    &quot;timestamp&quot;: &quot;2025-08-19T10:05:00Z&quot;
+}
+</code></pre>
+<hr />
+<h2 id="4-delete-a-message">4️⃣ Delete a Message</h2>
+<p><strong>Goal:</strong> Remove a message by its ID.</p>
+<pre><code class="language-python">message_id = 1
+response = requests.delete(f&quot;https://api.simplechat.example.com/messages/{message_id}&quot;, headers=headers)
+print(response.status_code)  # 204 = Success
+</code></pre>
+<p>!!! tip "Good Practice"
+    Always confirm deletion by fetching the list of messages again. Handle <code>404 Not Found</code> if the message ID does not exist.</p>
+<hr />
+<h2 id="5-real-world-workflow">5️⃣ Real-World Workflow</h2>
+<p><strong>Scenario:</strong> Alice sends a message → Bob receives → Bob replies → Alice updates her original message → Alice deletes an old message.</p>
+<ol>
+<li>Send a message (<code>POST /messages</code>)  </li>
+<li>List messages (<code>GET /messages</code>)  </li>
+<li>Update a message (<code>PUT /messages/{id}</code>)  </li>
+<li>Delete a message (<code>DELETE /messages/{id}</code>)  </li>
+</ol>
+<p><img alt="Message Workflow" src="images/message-workflow.png" /></p>
+<hr />
+<h2 id="summary">✅ Summary</h2>
+<ul>
+<li>Step-by-step examples show <strong>how to send, list, update, and delete messages</strong>.  </li>
+<li>Use <strong>callouts and tips</strong> to make your workflow robust.  </li>
+<li>Include <strong>visual aids</strong> for clarity.  </li>
+</ul>
 
 
 
